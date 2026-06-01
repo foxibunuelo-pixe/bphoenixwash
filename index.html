@@ -1,4 +1,219 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>B Phoenix Wash</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    background:#e9e9e9;
+    color:#111;
+    overflow-x:hidden;
+}
+
+/* FONDO */
+.hero{
+    position:relative;
+    min-height:100vh;
+    padding:40px 25px;
+    overflow:hidden;
+}
+
+/* Imagen grande de fondo */
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:url("phoenix-logo.png") center center no-repeat;
+    background-size:80%;
+    opacity:0.12;
+    z-index:0;
+}
+
+/* Contenido encima */
+.content{
+    position:relative;
+    z-index:2;
+}
+
+h1{
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+.line{
+    width:100%;
+    height:2px;
+    background:#777;
+    margin:25px 0 50px;
+}
+
+.logo-center{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.logo-center img{
+    width:180px;
+}
+
+/* SECCIONES */
+section{
+    margin-bottom:70px;
+}
+
+h2{
+    font-size:58px;
+    margin-bottom:30px;
+}
+
+.about-text{
+    font-size:28px;
+    line-height:1.5;
+    max-width:800px;
+}
+
+/* SERVICIOS */
+.service{
+    margin-bottom:50px;
+}
+
+.service h3{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.service ul{
+    padding-left:40px;
+}
+
+.service li{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    h1{
+        font-size:42px;
+    }
+
+    .subtitle{
+        font-size:22px;
+    }
+
+    h2{
+        font-size:38px;
+    }
+
+    .about-text,
+    .service li{
+        font-size:22px;
+    }
+
+    .service h3{
+        font-size:30px;
+    }
+
+    .hero::before{
+        background-size:120%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="content">
+
+        <h1>B Phoenix Wash</h1>
+
+        <p class="subtitle">
+            Professional Mobile Car Wash Services
+        </p>
+
+        <div class="line"></div>
+
+        <!-- LOGO -->
+        <div class="logo-center">
+            <img src="phoenix-logo.png" alt="Phoenix Wash Logo">
+        </div>
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Us</h2>
+
+            <p class="about-text">
+                B Phoenix Wash, our mission is to provide
+                high-quality mobile car wash services with
+                convenience, attention to detail, and
+                customer satisfaction.
+            </p>
+        </section>
+
+        <div class="line"></div>
+
+        <!-- SERVICES -->
+        <section>
+
+            <h2>Services</h2>
+
+            <div class="service">
+                <h3>Premium Wash</h3>
+
+                <ul>
+                    <li>Exterior wash</li>
+                    <li>Tire cleaning</li>
+                    <li>Window cleaning</li>
+                    <li>Quick interior vacuum</li>
+                </ul>
+            </div>
+
+            <div class="service">
+                <h3>Gold Wash – $70</h3>
+
+                <ul>
+                    <li>Everything in Premium</li>
+                    <li>Dashboard cleaning</li>
+                    <li>Door jamb cleaning</li>
+                    <li>Tire shine</li>
+                </ul>
+            </div>
+
+            <div class="service">
+                <h3>Platinum Wash – $100</h3>
+
+                <ul>
+                    <li>Everything in Gold</li>
+                    <li>Deep interior vacuum</li>
+                    <li>Full detail spray</li>
+                </ul>
+            </div>
+
+        </section>
+
+    </div>
+</div>
+
+</body>
+</html><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
