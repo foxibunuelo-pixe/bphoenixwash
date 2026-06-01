@@ -5,7 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B Phoenix Wash</title>
 </head>
-  <body>
+  <style>
+body {
+    background-image: url("assets/logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+  </style>
     
   <h1>B Phoenix Wash</h1>
   <p>Professional Mobile Car Wash Services</p>
